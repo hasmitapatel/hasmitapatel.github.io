@@ -423,9 +423,12 @@ h2 {
 }
 
 
+
 /* Homepage
 ------------------------------------------*/
-
+.section {
+  padding: 10em 0;
+}
 .home {
   display: flex;
   align-items: center;
