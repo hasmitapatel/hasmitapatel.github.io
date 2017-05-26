@@ -199,6 +199,7 @@ a {
 .web-nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -233,11 +234,9 @@ a {
 .web-nav a:hover {
 
   background: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
 
 
 }
-
 
 /* Sticks nav to top and additional styling */
 
@@ -354,7 +353,6 @@ a {
   overflow: hidden;
 }
 
-
 /* Typography
 ------------------------------------------*/
 
@@ -377,6 +375,10 @@ h1 {
 
 }
 
+.hi {
+  margin-bottom:0;
+}
+
 h2 {
   color: white;
   text-transform: uppercase;
@@ -386,6 +388,8 @@ h2 {
   margin:0;
   margin-bottom: 1em;
 }
+
+
 
 .home-title {
   margin: .5em;
@@ -427,7 +431,7 @@ h2 {
 /* Homepage
 ------------------------------------------*/
 .section {
-  padding: 2em 0;
+  padding: 0;
 }
 .home {
   display: flex;
@@ -603,10 +607,13 @@ form {
   flex-direction: column;
   width: 75%;
 }
+input::placeholder {
+  font-family: 'Hind', sans-serif;
 
-/*textarea::placeholder {
-  color: white;
-}*/
+}
+textarea::placeholder {
+  font-family: 'Hind', sans-serif;
+}
 
 input[type="text"],
 input[type="email"],
@@ -702,6 +709,51 @@ input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 768px) {
+
+  /* Navigation
+------------------------------------------*/
+
+.home-nav a:hover {
+  background: rgba(50, 50, 50, 0.3);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background: rgba(50, 50, 50, 0.1);
+  width: 100%;
+  z-index: 100;
+}
+
+  .web-nav ul,
+  .illu-nav ul,
+  .anim-nav ul,
+  .home-nav ul {
+    flex-direction: row;
+  }
+  .web-nav ul,
+  .illu-nav ul,
+  .anim-nav ul {
+    justify-content: center;
+  }
+  .home-nav ul li,
+  .anim-nav ul li,
+  .web-nav ul li,
+  .illu-nav ul li {
+    margin-right: .5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+  }
+  .home-nav a,
+  .anim-nav a,
+  .web-nav a,
+  .illu-nav a {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+  }
+
   /* Responsive-Nav
 ------------------------------------------*/
   .js .nav-collapse {
@@ -767,9 +819,6 @@ input[type="submit"]:hover {
 
   }
 
-  
-
-
   .website {
     flex-direction: row;
   }
@@ -810,37 +859,18 @@ input[type="submit"]:hover {
 }
 }
 
+@media only screen and (min-width: 1024px) {
+.section {
+  padding: 13em 0;
+}
+
+
+
+  }
+
+
 @media only screen and (min-width: 1224px) {
-  /* Navigation
-------------------------------------------*/
-  .web-nav ul,
-  .illu-nav ul,
-  .anim-nav ul,
-  .home-nav ul {
-    flex-direction: row;
-  }
-  .web-nav ul,
-  .illu-nav ul,
-  .anim-nav ul {
-    justify-content: center;
-  }
-  .home-nav ul li,
-  .anim-nav ul li,
-  .web-nav ul li,
-  .illu-nav ul li {
-    margin-right: .5em;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
-  }
-  .home-nav a,
-  .anim-nav a,
-  .web-nav a,
-  .illu-nav a {
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
-  }
+  
   /* Homepage
 ------------------------------------------*/
 .section {
@@ -875,7 +905,7 @@ input[type="submit"]:hover {
     font-size: 30px;
   }
   .home-title {
-    margin: 0;
+    margin: .2em;
     text-transform: uppercase;
     font-size: 60px;
     color: white;
