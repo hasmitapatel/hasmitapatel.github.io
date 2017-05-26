@@ -879,6 +879,22 @@ input[type="submit"]:hover {
     align-items: center;
   }
 
+   h2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+  }
+  .home-title {
+    margin: .2em;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    text-shadow: rgb(147, 5, 57) 2px 1px 5px;
+  }
+
+
 
 
   }
@@ -913,20 +929,7 @@ input[type="submit"]:hover {
   }
   /* Typography
 ------------------------------------------*/
-  h2 {
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 30px;
-  }
-  .home-title {
-    margin: .2em;
-    text-transform: uppercase;
-    font-size: 60px;
-    color: white;
-    text-align: center;
-    text-shadow: rgb(147, 5, 57) 2px 1px 5px;
-  }
+
 
 
   .collapse {
