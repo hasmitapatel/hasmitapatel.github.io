@@ -64,9 +64,10 @@ footer {
 }
 
 .container {
-  height: 800px;
+
   margin: 0 auto;
-  padding: 1em;
+  padding: 3em 0;
+
 }
 
 body {
@@ -373,6 +374,7 @@ h1 {
   text-align: center;
   text-shadow: rgb(147, 5, 57) 2px 1px 5px;
   padding: 1em .5em 0 .5em;
+
 }
 
 h2 {
@@ -381,6 +383,8 @@ h2 {
   text-align: center;
   font-size: 28px;
   padding: 0;
+  margin:0;
+  margin-bottom: 1em;
 }
 
 .home-title {
@@ -423,9 +427,17 @@ h2 {
 ------------------------------------------*/
 
 .home {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background: #CA054D;
   margin: 0;
+ 
+}
+
+.home-text {
+  margin-top: 10em;
+  margin-bottom: 8em;
 }
 
 @keyframes enlarge {
@@ -441,14 +453,16 @@ h2 {
   animation: enlarge 1s infinite alternate;
   display: flex;
   justify-content: center;
-  padding-top: 6em;
-  margin: auto;
+  
+  margin: 6em auto 0;
 }
 
 .about {
-  width: 100%;
+  
+  height: auto;
   background: #411028;
   margin: 0;
+  width: 100%;
 }
 
   .about-text p {
@@ -457,9 +471,10 @@ h2 {
   }
 
 .portfolio {
-  width: 100%;
+ 
   background: #6B1B2E;
   margin: 0;
+  width: 100%;
 }
 
 .collapse {
@@ -467,6 +482,7 @@ h2 {
   align-items: center;
   padding: 3em;
   flex-direction: column;
+  
 }
 
 .row {
@@ -474,6 +490,7 @@ h2 {
   align-items: center;
   padding: 3em;
   flex-direction: column;
+
 }
 
 .icon-link {
@@ -565,10 +582,11 @@ h2 {
 }
 
 .contact {
-  width: 100%;
+
   position: relative;
   background: #F9CB5B;
   margin: 0;
+  width: 100%;
 }
 
 form {
@@ -745,6 +763,8 @@ input[type="submit"]:hover {
     padding-left: 2em;
 
   }
+
+  
 
 
   .website {
