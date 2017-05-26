@@ -18,11 +18,11 @@
 <body>
   <nav class="sticky home-nav">
     <ul>
-      <li><a href="#section0">Home</a></li>
-      <li><a href="#section1">About</a></li>
-      <li><a href="#section2">Portfolios</a></li>
-      <li><a href="#section3">Services</a></li>
-      <li><a href="#section4">Contact</a></li>
+      <li><a data-scroll href="#section0">Home</a></li>
+      <li><a data-scroll href="#section1">About</a></li>
+      <li><a data-scroll href="#section2">Portfolios</a></li>
+      <li><a data-scroll href="#section3">Services</a></li>
+      <li><a data-scroll href="#section4">Contact</a></li>
     </ul>
   </nav>
   
@@ -132,6 +132,12 @@
     });
   });
 
+  </script>
+  <script src="js/smooth-scroll.js"></script>
+  <script>
+  smoothScroll.init({
+    offset: 90
+  });
   </script>
 </body>
 
