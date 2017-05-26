@@ -441,11 +441,18 @@ h2 {
   padding: 0;
 }
 .home {
+  display: flex;
   align-items: center;
   flex-direction: column;
   background: #CA054D;
   margin: 0;
  
+}
+
+.pink-bg {
+  background: #CA054D;
+  margin: 0;
+
 }
 
 .home-text {
@@ -800,17 +807,7 @@ input[type="submit"]:hover {
     width: 200px;
     height: 200px;
   }
-  .speech-bubble {
-    background: url(images/speech-bubble.png) no-repeat;
-    filter: drop-shadow(16px 16px 10px rgba(42, 8, 25, 0.5));
-    width: 1024px;
-    height: 768px;
-    margin: 0 auto;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  
   .contact-form {
     max-width: 50%;
   }
@@ -869,6 +866,18 @@ input[type="submit"]:hover {
 .section {
   padding: 13em 0;
 }
+
+.speech-bubble {
+    background: url(images/speech-bubble.png) no-repeat;
+    filter: drop-shadow(16px 16px 10px rgba(42, 8, 25, 0.5));
+    width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
 
