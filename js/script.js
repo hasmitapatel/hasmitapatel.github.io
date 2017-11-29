@@ -19,5 +19,12 @@
         });
 
 
-
+// $(document).ready(function() {
+//    $('.image-link').on('mouseover', function(){
+// $(this).find(".text-overlay").fadeIn();
+//    })
+//     $('.image-link').mouseout( function(){
+// $(".text-overlay").fadeOut();
+//    })
+// })
 
