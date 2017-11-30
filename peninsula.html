@@ -9,21 +9,21 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://use.fontawesome.com/9372526d0d.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans:400,600" rel="stylesheet">
 </head>
 
 <body>
-<div class="container">
-    <header class="indiv-header">
-        <h1 class="logo">Hasmita Patel</h1>
-        <ul class="main-nav">
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="index.html">Contact</a></li>
-        </ul>
-    </header>
+    <div class="container">
+        <header class="indiv-header">
+            <h1 class="logo">Hasmita Patel</h1>
+            <ul class="main-nav">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </header>
     </div>
-    <div class="portfolio-section">
+    <div class="indiv-container">
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
@@ -35,20 +35,27 @@
                             <div class="swiper-slide"><img src="images/p2.jpg" alt=""></div>
                             <div class="swiper-slide"><img src="images/p3.jpg" alt=""></div>
                         </div>
-                        
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-md-offset-1">
                     <div class="blurb">
                         <h2>Peninsula Quarries</h2>
-                        <p>I was the front-end developer but also helped with the design and UI for this project. I used Jquery for most of the interactions and CSS for the animations</p>
-                        <p>The interactions on this project include:</p><ul>
-                            <li>- Slide-out forms over the top of the menu</li>
-
+                        <p>In this project, some of the key features and things I learnt were:</p>
+                        <ul class="list">
+                            <li><span>-</span>
+                                <p>CSS animation transitions (fading in menu items with an animation delay)</p>
+                            </li>
+                            <li><span>-</span>
+                                <p>Page fade transitions after clicking on a link</p>
+                            </li>
+                            <li><span>-</span>
+                                <p>Pushing the whole website aside when the menu slides open with css + javascript</p>
+                            </li>
                         </ul>
-                         <a class="web-links" href="http://peninsula3.static.generalstudios.com/" target="_blank">Take me there!</a>
+                        <a class="web-links" href="http://peninsula3.static.generalstudios.com/" target="_blank">Take me there!</a>
                     </div>
+                    <a class="next" href="tj.html">Next<img src="images/next.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -63,11 +70,12 @@
         var mySwiper = new Swiper('.swiper-container', {
             direction: 'horizontal',
             loop: true,
+            effect: 'fade',
             pagination: {
                 el: '.swiper-pagination',
             },
             autoplay: {
-                delay: 2000,
+                delay: 2500,
             }
         })
     });

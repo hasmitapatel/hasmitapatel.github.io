@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://use.fontawesome.com/9372526d0d.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans:400,600" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         </ul>
     </header>
     </div>
-    <div class="portfolio-section">
+    <div class="indiv-container">
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
@@ -43,13 +43,21 @@
                 <div class="col-md-4 col-md-offset-1">
                     <div class="blurb">
                         <h2>Spring Sheep Milk</h2>
-                        <p>I was the front-end developer but also helped with the design and UI for this project. I used Jquery for most of the interactions and CSS for the animations</p>
-                        <p>The interactions on this project include:</p><ul>
-                            <li>- Slide-out forms over the top of the menu</li>
-
+                             <p>In this project, some of the key features and things I learnt were:</p>
+                        <ul class="list">
+                            <li><span>-</span>
+                                <p>Creating fade in modals with multiple triggers</p>
+                            </li>
+                            <li><span>-</span>
+                                <p>Navigation header changes colour on scroll</p>
+                            </li>
+                            <li><span>-</span>
+                                <p>Text reveals itself when hovering over an image using css</p>
+                            </li>
                         </ul>
-                         <a class="web-links" href="http://www.springsheepnz.com/" target="_blank">Take me there!</a>
+                         <a class="web-links" href="http://www.springsheepnz.com/" target="_blank">Take me there!</a><p class="disclaimer">Note: We are making a few ongoing changes to the live website over the next few days so this webpage may not show.</p>
                     </div>
+                    <a class="next" href="engineroom.html">Next<img src="images/next.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -64,11 +72,12 @@
         var mySwiper = new Swiper('.swiper-container', {
             direction: 'horizontal',
             loop: true,
+            effect: 'fade',
             pagination: {
                 el: '.swiper-pagination',
             },
             autoplay: {
-                delay: 2000,
+                delay: 2500,
             }
         })
     });
