@@ -475,6 +475,16 @@ img {
     justify-content: flex-start;
 }
 
+.blurb h2 {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+.indiv-text{
+  padding-top: 10px;
+  
+}
+
 .indiv-header {
     max-width: 1150px;
     padding: 0 45px;
