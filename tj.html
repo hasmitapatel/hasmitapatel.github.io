@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hasmita Patel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/9372526d0d.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Roboto:400,500" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">Hasmita Patel</h1>
+        <ul class="main-nav">
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="index.html">Contact</a></li>
+        </ul>
+    </header>
+ 
+    <div class="indiv-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="images/tjhome.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/tjmenu.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/tjaccordian.jpg" alt=""></div>
+                        </div>
+                        
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                   <div class="col-md-4 col-md-offset-1">
+                    <div class="blurb">
+                        <h2>TJ Electrical</h2>
+                        <div class="indiv-text">
+                        <p>In this project, some of the key features and things I learnt were:</p>
+                       <ul class="list">
+                        <li><span>-</span><p>Accordion interaction that closes an opened tab if user clicks another tab</p></li>
+                        <li><span>-</span><p>Creating a slide-out menu with a clickable overlay to close menu</p></li>
+                        <li><span>-</span><p>Incorporating plugins into a website</p></li>
+                        </ul>
+                        </div>
+                         <a class="web-links" href="http://tj-2.static.generalstudios.com/" target="_blank">Take me there!</a>
+                    </div>
+                    <a class="next" href="springsheep.html">Next<img src="images/next.svg" alt=""></a>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script>
+    $(document).ready(function() {
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: {
+                delay: 2500,
+            },
+
+        })
+    });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
