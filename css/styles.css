@@ -53,6 +53,7 @@ input, textarea{
  input {
     border: none;
     border-bottom: 2px solid #ddd;
+    border-radius: none;
  }
 
  input[type="submit"] {
@@ -645,6 +646,9 @@ width:100%;
 }
 .name-bar{
     margin: 0;
+}
+.form-inputs .form-bar {
+    width: 100%;
 }
 }
 
