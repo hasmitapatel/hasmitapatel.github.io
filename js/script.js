@@ -6,7 +6,7 @@
          $(document).ready(function() {
             $(".smoothscroll").on('click', function(event) {
                 if (this.hash !== "0") {
-                  
+                    event.preventDefault();
                     var hash = this.hash;
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
