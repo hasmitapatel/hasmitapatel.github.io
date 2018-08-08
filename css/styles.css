@@ -238,6 +238,7 @@ ul li {
 
 .list li span {
     margin-right: 10px;
+    color: #b2b2b2;
 }
 
 .logo {
@@ -529,6 +530,10 @@ img {
 .blurb p {
     text-align: left;
     justify-content: flex-start;
+}
+
+.blurb p {
+    color: #b2b2b2;
 }
 
 .blurb h2 {
