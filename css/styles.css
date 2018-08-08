@@ -179,7 +179,7 @@ left: 50%;
     transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-height: 768px) {
+@media only screen and (max-height: 500px) {
     .indiv-container {
         padding: 40px 0;
         position: static;
