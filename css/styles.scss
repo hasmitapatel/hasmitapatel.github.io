@@ -7,24 +7,6 @@ html {
     padding: 0px;
 }
 
-@font-face {
-    font-family: 'Reg';
-    src: url('../fonts/FoundersGroteskWeb-Regular.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/FoundersGroteskWeb-Regular.woff') format('woff'),
-        /* Pretty Modern Browsers */
-
-}
-
-@font-face {
-    font-family: 'Light';
-    src: url('../fonts/FoundersGroteskWeb-Light.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/FoundersGroteskWeb-Light.woff') format('woff'),
-        /* Pretty Modern Browsers */
-
-}
-
 h2,
 h3,
 h4 {
@@ -92,7 +74,6 @@ a:hover {
     height: auto;
     position: relative;
     margin: 0px;
-    background: #000;
 
     @media only screen and (max-width: 991px) {
         width: 50%;
