@@ -359,6 +359,9 @@ p{
 
 .three-d {
 	width: 66%;
+      @media only screen and (max-width: 1000px) {
+        width: 80%
+    }
 }
 /* Demo Styles */
 
