@@ -21,8 +21,8 @@ var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [];
 // symbols:
-(lib._300x250map = function() {
-	this.initialize(img._300x250map);
+(lib.bubblesquaremap = function() {
+	this.initialize(img.bubblesquaremap);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,300,250);
 (lib.bubble300x250 = function() {
@@ -32,7 +32,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,130,127);
 (lib.Scene_1_BACKGROUND = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 	// BACKGROUND
-	this.instance = new lib._300x250map();
+	this.instance = new lib.bubblesquaremap();
 	this.instance.parent = this;
 	this.instance.setTransform(-1,0,1.01,1.01);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(96));
@@ -255,7 +255,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_300x250map.jpg", id:"_300x250map"},
+		{src:"images/bubblesquaremap.jpg", id:"bubblesquaremap"},
 		{src:"images/bubble300x250.png", id:"bubble300x250"}
 	],
 	preloads: []
