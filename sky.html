@@ -15,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Roboto:400,500" rel="stylesheet">
     <style>
 :root {
-    --swiper-theme-color: #fff;
-    --swiper-navigation-size: 30px;
+    --swiper-theme-color: #9100d4;
+    --swiper-navigation-size: 25px;
 }
     </style>
 </head>
@@ -38,7 +38,6 @@
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="sky/SKY_Frontify_1.jpg"/></div>
       <div class="swiper-slide"><img src="sky/SKY-opening-concept.gif"/></div>
       <div class="swiper-slide"><img src="sky/SKY_Frontify_2.jpg"/></div>
       <div class="swiper-slide"><img src="sky/SKY_Frontify_3.jpg"/></div>
@@ -47,6 +46,7 @@
       <div class="swiper-slide"><img src="sky/SKY_Frontify_6.jpg"/></div>
       <div class="swiper-slide"><img src="sky/SKY_Frontify_7.jpg"/></div>
       <div class="swiper-slide"><img src="sky/SKY_Frontify_8.jpg"/></div>
+      <div class="swiper-slide"><img src="sky/SKY_Frontify_1.jpg"/></div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -67,15 +67,16 @@
     <script src="js/script.js "></script>
     <script type="text/javascript">
       var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
+      spaceBetween: 30,
+      effect: "fade",
       centeredSlides: true,
       autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: true,
       },
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        type: "progressbar",
       },
       navigation: {
         nextEl: ".swiper-button-next",
