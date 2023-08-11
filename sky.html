@@ -15,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Roboto:400,500" rel="stylesheet">
     <style>
 :root {
-    --swiper-theme-color: #9100d4;
-    --swiper-navigation-size: 20px;
+    --swiper-theme-color: #fff;
+    --swiper-navigation-size: 30px;
 }
     </style>
 </head>
@@ -33,7 +33,7 @@
 
        <div class="project-title">
                     <h1>Sky Brand Guidelines</h1>
-                    <p>I contributed to the design and development of the Sky Brand Guidelines on the platform, Frontify. Below is an example of what the concept design and an animated example we included demonstrating how to use the asset on a poster. </p>
+                    <p>I contributed to the design and development of the Sky Brand Guidelines on the platform, Frontify. Below is an example of the concept design and an animation I created, demonstrating how to use the asset on a poster. </p>
                     </div>
   <!-- Swiper -->
   <div class="swiper mySwiper">
@@ -67,9 +67,15 @@
     <script src="js/script.js "></script>
     <script type="text/javascript">
       var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+      },
       pagination: {
         el: ".swiper-pagination",
-        type: "progressbar",
+        clickable: true,
       },
       navigation: {
         nextEl: ".swiper-button-next",
